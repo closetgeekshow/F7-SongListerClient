@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="dist/css/framework7.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+  <link rel="stylesheet" href="dist/css/framework7-icons.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+</head>
+<body>
+    <div id="myApp" class="color-theme-pink ios">
+            <!-- Status bar overlay for full screen mode (PhoneGap) -->
+            <div class="statusbar"></div>
+                <!-- Views -->
+                <div class="views">
+                    <!-- Your main view, should have "view-main" class -->
+                    <div class="view view-main view-init ios-edges" data-url: "/">    
+                        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+                        <div class="pages navbar-through toolbar-through">
+                            <!-- Page, "data-page" contains page name -->
+                            <div data-name="index" class="page no-toolbar">
+                                <!-- Top Navbar-->
+                                <div class="navbar">
+                                    <div class="navbar-inner">
+                                        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                                        <div class="left"></div>
+                                        <div class="title sliding">Songsmith 8==D Karaoke</div>
+                                        <div class="right">
+                                            <!--
+                                            Right link contains only icon - additional "icon-only" class
+                                            Additional "open-panel" class tells app to open panel when we click on this link
+                                            -->
+                                            <a href="#" class="link icon-only open-panel"><i class="f7-icons">mic</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Scrollable page content -->
+                                <div class="page-content">
+                                    <div class="content-block">
+                                        <p>Test === Page</p>
+                                        <!-- Link to another page -->
+                                        <p>
+                                            <a href="/login/" class="button button-fill">START APP</a>
+                                        </p>
+                                        <p>
+                                            <a href="/about/" class="link">About app</a>
+                                        </p> 
+                                        <p>
+                                            <a href="/form-data-example/" class="link">Form Data Example</a>
+                                        </p>       
+                                        <p>
+                                            <a href="/panel-right-1/">Panel Right 1</a>    
+                                        </p>                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bottom Toolbar-->
+                        <div class="toolbar">
+                            <div class="toolbar-inner">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+               
+                <script src="dist/js/framework7.min.js"></script>
+                <script src="js/myapp-routes.js"></script>
+                <script src="js/app.js"></script>    
+                </div>
+</body>
+</html>

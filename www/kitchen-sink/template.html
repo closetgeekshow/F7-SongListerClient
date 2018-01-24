@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="../dist/css/framework7.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+</head>
+<body>
+  <div id="app" class="color-theme-pink">
+    <div class="statusbar"></div>
+    <div class="panel panel-left panel-reveal">
+      <div class="page">
+        <div class="page-content">
+            <div class="card">
+                <div class="card-header">Singer Name</div>
+                <div class="card-content">
+                    <div class="card-content-inner">
+                        Artist Name - Song Title
+                    </div>
+                </div>
+                <div class="card-footer"><b>1</b> Now on stage</div>
+            </div>
+            <div class="card">
+                    <div class="card-header">Singer Name</div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            Artist Name - Song Title
+                        </div>
+                    </div>
+                    <div class="card-footer"><b>2</b> Approximately 4 minutes</div>
+            </div>
+            <div class="card">
+                    <div class="card-header">Singer Name</div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            Artist Name - Song Title
+                        </div>
+                    </div>
+                    <div class="card-footer"><b>3</b> Approximately 8 minutes</div>
+            </div>
+            <div class="card">
+                    <div class="card-header">Singer Name</div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            Artist Name - Song Title
+                        </div>
+                    </div>
+                    <div class="card-footer"><b>4</b> Approximately 12 minutes</div>
+            </div>
+            <div class="card">
+                    <div class="card-header">Singer Name</div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            Artist Name - Song Title
+                        </div>
+                    </div>
+                    <div class="card-footer"><b>5</b> Approximately 16 minutes</div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="view view-main view-init ios-edges" data-url="/">
+      <div class="page" data-page="add">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+              
+            </div>
+            <div class="title sliding">Template</div>
+            <div class="right">
+                <a href="#" class="link icon-only panel-open" data-panel="left">
+                    <i class="icon f7-icons ios-only">menu</i>
+                    <i class="icon material-icons md-only">menu</i>
+                  </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="page-content"> 
+            <form class="list" id="add-song-form">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                            <div class="item-input-wrap">    
+                                <div class="item-title item-label">Artist</div>
+                                <div class="item-input">
+                                    <input type="text" name="artist" value="" placeholder="Enter text">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-input-wrap">
+                                        <div class="item-title item-label">Song Title</div>
+                                        <div class="item-input">
+                                            <input type="email" name="song" value="" placeholder="Enter text">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </li>
+                </ul>                        
+            </form>
+        <div class="block">
+                <p><a href="more-details.html" class="button button-outline">More Details</a></p>
+                <p><a href="" class="button button-fill convert-form-to-data">Submit</a></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/js/framework7.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
