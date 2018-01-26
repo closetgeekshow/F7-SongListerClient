@@ -23,6 +23,30 @@ var routes = [
     url: './add-song.html',
     name: 'add',
   },
+  // calendar page
+  {
+    path: '/calendar/',
+    url: './calendar.html',
+    name: 'calendar',
+  },
+  // change password page
+  {
+    path: '/change-password/',
+    url: './change-password.html',
+    name: 'change-password',
+  },
+  // main menu page
+  {
+    path: '/main/',
+    url: './mainmenu.html',
+    name: 'main',
+  },
+  // my songs page
+  {
+    path: '/my-songs/',
+    url: './my-songs.html',
+    name: 'my-songs',
+  },
   // Right Panel pages
   {
     path: '/panel-right-1/',

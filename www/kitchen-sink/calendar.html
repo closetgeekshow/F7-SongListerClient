@@ -1,85 +1,136 @@
-  
-
-<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
-
-<!-- Top Navbar-->
-<div class="navbar">
-    <div class="navbar-inner">
-        <div class="left">
-            <a href="#" class="back link">
-                <i class="f7-icons">home_fill</i>
-            </a>
-        </div>
-        <div class="center">Show Calendar</div>
-        <div class="right">
-                <!--
-                  Right link contains only icon - additional "icon-only" class
-                  Additional "open-panel" class tells app to open panel when we click on this link
-                -->
-                <a href="#" class="link icon-only open-panel"><i class="f7-icons">mic</i></a>
-        </div>
-    </div>
-</div>
-<div class="pages">
-    <div data-page="calendar" class="page no-toolbar">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="../dist/css/framework7.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+</head>
+<body>
+  <div id="app" class="color-theme-pink">
+    <div class="statusbar"></div>
+    <div class="panel panel-left panel-reveal">
+      <div class="page" data-name="calendar">
         <div class="page-content">
-            
-                <div class="card">
-                    <div class="card-header">Venue Name</div>
+            <div class="card">
+                <div class="card-header">Singer Name</div>
+                <div class="card-content">
+                    <div class="card-content-inner">
+                        Artist Name - Song Title
+                    </div>
+                </div>
+                <div class="card-footer"><b>1</b> Now on stage</div>
+            </div>
+            <div class="card">
+                    <div class="card-header">Singer Name</div>
                     <div class="card-content">
                         <div class="card-content-inner">
-                            000 Main Street<br />City
+                            Artist Name - Song Title
                         </div>
                     </div>
-                    <div class="card-footer">Monday Monthname 00, 2018 - 9:00 PM</div>
-                </div>
-                <div class="card">
-                    <div class="card-header">Venue Name</div>
+                    <div class="card-footer"><b>2</b> Approximately 4 minutes</div>
+            </div>
+            <div class="card">
+                    <div class="card-header">Singer Name</div>
                     <div class="card-content">
                         <div class="card-content-inner">
-                            000 Main Street<br />City
+                            Artist Name - Song Title
                         </div>
                     </div>
-                    <div class="card-footer">Monday Monthname 00, 2018 - 9:00 PM</div>
-                </div>
-                <div class="card">
-                    <div class="card-header">Venue Name</div>
+                    <div class="card-footer"><b>3</b> Approximately 8 minutes</div>
+            </div>
+            <div class="card">
+                    <div class="card-header">Singer Name</div>
                     <div class="card-content">
                         <div class="card-content-inner">
-                            000 Main Street<br />City
+                            Artist Name - Song Title
                         </div>
                     </div>
-                    <div class="card-footer">Monday Monthname 00, 2018 - 9:00 PM</div>
-                </div>
-                <div class="card">
-                    <div class="card-header">Venue Name</div>
+                    <div class="card-footer"><b>4</b> Approximately 12 minutes</div>
+            </div>
+            <div class="card">
+                    <div class="card-header">Singer Name</div>
                     <div class="card-content">
                         <div class="card-content-inner">
-                            000 Main Street<br />City
+                            Artist Name - Song Title
                         </div>
                     </div>
-                    <div class="card-footer">Monday Monthname 00, 2018 - 9:00 PM</div>
-                </div>
-                <div class="card">
-                    <div class="card-header">Venue Name</div>
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                            000 Main Street<br />City
-                        </div>
-                    </div>
-                    <div class="card-footer">Monday Monthname 00, 2018 - 9:00 PM</div>
-                </div>
-                <div class="card">
-                    <div class="card-header">Venue Name</div>
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                            000 Main Street<br />City
-                        </div>
-                    </div>
-                    <div class="card-footer">Monday Monthname 00, 2018 - 9:00 PM</div>
-                </div>
+                    <div class="card-footer"><b>5</b> Approximately 16 minutes</div>
+            </div>
         </div>
+      </div>
     </div>
-</div>
-
-
+    <div class="view view-main view-init ios-edges" data-url="/">
+      <div class="page" data-page="add">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+              
+            </div>
+            <div class="title sliding">Show Calendar</div>
+            <div class="right">
+                <a href="#" class="link icon-only panel-open" data-panel="left">
+                    <i class="icon f7-icons ios-only">menu</i>
+                    <i class="icon material-icons md-only">menu</i>
+                  </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="page-content"> 
+            <div class="card">
+                <div class="card-header">Venue Name</div>
+                <div class="card-content card-content-padding">
+                    00 Main Street<br />
+                    City
+                </div>
+                <div class="card-footer">Monday Monthname 00, 2018</div>
+            </div>   
+            <div class="card">
+                <div class="card-header">Venue Name</div>
+                <div class="card-content card-content-padding">
+                    00 Main Street<br />
+                    City
+                </div>
+                <div class="card-footer">Monday Monthname 00, 2018</div>
+            </div>  
+            <div class="card">
+                <div class="card-header">Venue Name</div>
+                <div class="card-content card-content-padding">
+                    00 Main Street<br />
+                    City
+                </div>
+                <div class="card-footer">Monday Monthname 00, 2018</div>
+            </div>
+            <div class="card">
+                <div class="card-header">Venue Name</div>
+                <div class="card-content card-content-padding">
+                    00 Main Street<br />
+                    City
+                </div>
+                <div class="card-footer">Monday Monthname 00, 2018</div>
+            </div>
+            <div class="card">
+                <div class="card-header">Venue Name</div>
+                <div class="card-content card-content-padding">
+                    00 Main Street<br />
+                    City
+                </div>
+                <div class="card-footer">Monday Monthname 00, 2018</div>
+            </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/js/framework7.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
