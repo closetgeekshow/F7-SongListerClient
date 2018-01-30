@@ -52,3 +52,12 @@ $(document).on('page:init', '.page[data-name="add"]', function (e) {
 		
     });
 })
+
+var songListTemplate = $('script#song-list-template').html();
+var compiledSongListTemplate = Template7.compile(songListTemplate);
+
+$(document).on('page:init', '.page[data-name="my-songs"]', function (e) {
+  // Do something here when page with data-name="about" attribute loaded and initialized
+  console.log('my songs loaded');
+  var html = compiledSongListTemplate(songList);
+})

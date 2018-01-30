@@ -23,6 +23,12 @@ var routes = [
     url: './add-song.html',
     name: 'add',
   },
+  // more details page
+  {
+    path: '/add-more/',
+    url: './more-details.html',
+    name: 'add-more',
+  },
   // calendar page
   {
     path: '/calendar/',

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="apple-touch-icon" href="img/f7-icon-square.png">
   <link rel="icon" href="img/f7-icon.png">
+  <link rel="stylesheet" href="css/mainmenu.css">
 </head>
 <body>
   <div id="app" class="color-theme-pink">
@@ -589,7 +590,32 @@
       </div>
     </div>
   </div>
+  <script id="song-list-template" type="text/template7">{{#each songs}}
+    <li>
+        <div class="item-content">
+            <div class="item-media">
+                <div class="checkbox-cell">
+                        <label class="checkbox">
+                        <input type="checkbox"/>
+                        <i class="icon-checkbox"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="item-inner">
+                <a href="#" class="item-link">
+                    <div class="item-title-row">
+                        <div class="item-title">{{songTitle}}</div>
+                    </div>
+                    <div class="item-subtitle">{{artistName}}</div>
+                </a>
+            </div>
+        </div>
+    </li>
+    {{/each}}</script>
   <script src="../dist/js/framework7.min.js"></script>
+
+  <script src="js/songList.js"></script>
+
   <script src="js/routes.js"></script>
   <script src="js/app.js"></script>
 </body>
