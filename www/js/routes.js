@@ -11,6 +11,48 @@ var routes = [
     url: './pages/about.html',
     name: 'about',
   },
+  // login page
+  {
+    path: '/login/',
+    url: './login.html',
+    name: 'login',
+  },
+  // add song page
+  {
+    path: '/add/',
+    url: './add-song.html',
+    name: 'add',
+  },
+  // more details page
+  {
+    path: '/add-more/',
+    url: './more-details.html',
+    name: 'add-more',
+  },
+  // calendar page
+  {
+    path: '/calendar/',
+    url: './calendar.html',
+    name: 'calendar',
+  },
+  // change password page
+  {
+    path: '/change-password/',
+    url: './change-password.html',
+    name: 'change-password',
+  },
+  // main menu page
+  {
+    path: '/main/',
+    url: './mainmenu.html',
+    name: 'main',
+  },
+  // my songs page
+  {
+    path: '/my-songs/',
+    url: './my-songs.html',
+    name: 'my-songs',
+  },
   // Right Panel pages
   {
     path: '/panel-right-1/',

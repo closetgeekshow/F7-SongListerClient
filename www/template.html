@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="../dist/css/framework7.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+  <link rel="stylesheet" href="css/mainmenu.css">
+</head>
+<body>
+  <div id="app" class="color-theme-pink">
+    <div class="statusbar"></div>
+    <div class="panel panel-left panel-reveal">
+        <div class="page" data-name="calendar">
+            <div class="page-content">
+                <div class="card">
+                    <div class="card-header">Singer Name</div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            Artist Name - Song Title
+                        </div>
+                    </div>
+                    <div class="card-footer"><b>1</b> Now on stage</div>
+                </div>
+                <div class="card">
+                        <div class="card-header">Singer Name</div>
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                Artist Name - Song Title
+                            </div>
+                        </div>
+                        <div class="card-footer"><b>2</b> Approximately 4 minutes</div>
+                </div>
+                <div class="card">
+                        <div class="card-header">Singer Name</div>
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                Artist Name - Song Title
+                            </div>
+                        </div>
+                        <div class="card-footer"><b>3</b> Approximately 8 minutes</div>
+                </div>
+                <div class="card">
+                        <div class="card-header">Singer Name</div>
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                Artist Name - Song Title
+                            </div>
+                        </div>
+                        <div class="card-footer"><b>4</b> Approximately 12 minutes</div>
+                </div>
+                <div class="card">
+                        <div class="card-header">Singer Name</div>
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                Artist Name - Song Title
+                            </div>
+                        </div>
+                        <div class="card-footer"><b>5</b> Approximately 16 minutes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="view view-main view-init ios-edges" data-url="/main/">
+      <div class="page mainmenu" data-name="mainmenu">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+                
+            </div>
+            <div class="title sliding">Main Menu</div>
+            <div class="right">
+                <a href="#" class="link icon-only panel-open" data-panel="left">
+                    <i class="f7-icons">mic</i>
+                </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="page-content"> 
+            <div class="block">
+                    <div class="row">
+                            <div class="col-50 center"><a href="my-songs.html">
+                                <i class="f7-icons size-50">tune_fill</i>
+                                <p></p>
+                                My Songs</a>
+                            </div>
+                            <div class="col-50 center"><a href="up-next.html">
+                                <i class="f7-icons size-50">mic_fill</i><br />
+                                <p></p>
+                                Up Next</a>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-100"><p></p></div>
+                          </div>
+                          <div class="row">
+                                <div class="col-50 center"><a href="calendar.html">
+                                        <i class="f7-icons size-50">calendar_fill</i><br />
+                                        <p></p>
+                                        Calendar</a></div>
+                                <div class="col-50 center"><a href="news.html">
+                                        <i class="f7-icons size-50">list</i><br />
+                                        <p></p>
+                                        News</a>
+                                </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-100"><p></p></div>
+                          </div>
+                          <div class="row">
+                                <div class="col-50 center"><a href="profile.html">
+                                        <i class="f7-icons size-50">person</i><br />
+                                        <p></p>
+                                        Profile</a>
+                                </div>
+                                
+                          </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/js/framework7.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

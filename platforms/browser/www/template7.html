@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="../dist/css/framework7.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+  <link rel="stylesheet" href="css/mainmenu.css">
+</head>
+<body>
+  <div id="app" class="color-theme-pink">
+    <div class="statusbar"></div>
+    <div class="view view-main view-init ios-edges" data-url="/main/">
+      <div class="page mainmenu" data-name="mainmenu">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+                
+            </div>
+            <div class="title sliding">Main Menu</div>
+            <div class="right">
+                <a href="#" class="link icon-only panel-open" data-panel="left">
+                    <i class="f7-icons">mic</i>
+                </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="page-content"> 
+          <ul id="content-wrap" class="list">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="song-list-template" type="text/template7">{{#each songs}}
+    <li>
+        <div class="item-content">
+            <div class="item-media">
+                <div class="checkbox-cell">
+                        <label class="checkbox">
+                        <input type="checkbox"/>
+                        <i class="icon-checkbox"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="item-inner">
+                <a href="#" class="item-link">
+                    <div class="item-title-row">
+                        <div class="item-title">{{songTitle}}</div>
+                    </div>
+                    <div class="item-subtitle">{{artistName}}</div>
+                </a>
+            </div>
+        </div>
+    </li>
+    {{else}}
+    ERROR
+    {{/each}}</script>
+  <script src="../dist/js/framework7.min.js"></script>
+  <script src="js/songList.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+      var template = document.getElementById('song-list-template').innerHTML;
+        // Compile and render
+        var compiled = Template7(template).compile();
+    
+        var compiledRendered = compiled(songList);
+        
+        // Insert rendered template
+        document.getElementById('content-wrap').innerHTML = compiledRendered;
+        
+  </script>
+</body>
+</html>
