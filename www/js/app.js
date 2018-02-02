@@ -9,7 +9,7 @@ if (document.location.search.indexOf('theme=') >= 0) {
 
 // Init App
 var app = new Framework7({
-  id: 'io.framework7.testapp',
+  id: 'com.brentmorris.songlister',
   root: '#app',
   theme: theme,
   data: function () {
