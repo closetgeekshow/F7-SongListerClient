@@ -26,10 +26,9 @@ var app = new Framework7({
     },
   },
   routes: routes,
-  vi: {
-    placementId: 'pltd4o7ibb9rc653x14',
-  },
 });
+
+var JSONblank = true;
 
 // Option 2. Using live 'page:init' event handlers for each page
 $(document).on('page:init', '.page[data-name="login"]', function (e) {
@@ -39,6 +38,8 @@ $(document).on('page:init', '.page[data-name="login"]', function (e) {
       console.log('data stored');
       var formData = app.form.convertToData('#login-form');
       console.log('data: ' + JSON.stringify(formData));
+
+      
   }); 
 })
 
@@ -46,18 +47,68 @@ $(document).on('page:init', '.page[data-name="add"]', function (e) {
   // Do something here when page with data-name="about" attribute loaded and initialized
   console.log('add page loaded');
   $('.convert-form-to-data').on('click', function(){
-	  
-        var formData = app.form.convertToData('#add-song-form');
-        alert(JSON.stringify(formData));
-		
+        if ($('input[name="artistName"]').val() && $('input[name="songTitle"]').val() ) {
+          var formData = app.form.convertToData('#add-song-form');
+          
+          if (JSONblank == true) {
+            //songList.songs.push(formData);
+            songList.songs = new Array(formData);
+            JSONblank = false;
+          } else {
+            songList.songs.push(formData);
+          }
+
+        
+        }		
+        
+        $('#add-song-form input').val("");
+
+        // store songList in local storage
+        var dataToStore = JSON.stringify(songList);
+        localStorage.setItem('songListData', dataToStore);
+
     });
 })
 
-var songListTemplate = $('script#song-list-template').html();
-var compiledSongListTemplate = Template7.compile(songListTemplate);
+var songListTemplate, compiledSongListTemplate;
+
+function compileTemplateSongList() {
+  songListTemplate = $('script#song-list-template').html();
+  compiledSongListTemplate = Template7(songListTemplate).compile();
+}
+
+function printSongList () {
+  var lsData = localStorage.getItem("songListData");
+  if (lsData != null && lsData.length > 0) {
+    JSONblank = false;
+    songList = JSON.parse(lsData);
+    
+  } else {
+    songList = {
+      songs : [
+          {
+          "artistName": "Tap the + button",
+          "songTitle": "Add a song",
+          },
+      ]
+    }
+  }
+  
+  //songList = JSON.parse(localStorage.getItem("songListData"));
+  document.getElementById('songList').innerHTML = compiledSongListTemplate(songList);
+  
+}
+
+
 
 $(document).on('page:init', '.page[data-name="my-songs"]', function (e) {
-  // Do something here when page with data-name="about" attribute loaded and initialized
-  console.log('my songs loaded');
-  var html = compiledSongListTemplate(songList);
+  console.log('my songs init');
+  compileTemplateSongList();
+  printSongList();
+})
+
+$(document).on('page:reinit', '.page[data-name="my-songs"]', function (e) {
+  console.log('my songs reinit');
+  compileTemplateSongList();
+  printSongList();
 })
