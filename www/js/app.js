@@ -47,27 +47,27 @@ $(document).on('page:init', '.page[data-name="add"]', function (e) {
   // Do something here when page with data-name="about" attribute loaded and initialized
   console.log('add page loaded');
   $('.convert-form-to-data').on('click', function(){
-        if ($('input[name="artistName"]').val() && $('input[name="songTitle"]').val() ) {
-          var formData = app.form.convertToData('#add-song-form');
-          
-          if (songList.songs[0].songTitle == "Add a song") {
-            //songList.songs.push(formData);
-            songList.songs = new Array(formData);
-            
-          } else {
-            songList.songs.push(formData);
-          }
-
+    if ($('input[name="artistName"]').val() && $('input[name="songTitle"]').val() ) {
+      var formData = app.form.convertToData('#add-song-form');
+      
+      if (songList.songs[0].songTitle == "Add a song") {
+        //songList.songs.push(formData);
+        songList.songs = new Array(formData);
         
-        }		
-        
-        $('#add-song-form input').val("");
+      } else {
+        songList.songs.push(formData);
+      }
+    
+    $('#add-song-form input').val("");
 
-        // store songList in local storage
-        var dataToStore = JSON.stringify(songList);
-        window.localStorage.setItem('songListData', dataToStore);
+    // store songList in local storage
+    var dataToStore = JSON.stringify(songList);
+    window.localStorage.setItem('songListData', dataToStore);
 
-    });
+    // redirect back to my songs
+    app.views.main.router.back('/my-songs/', {force: true, ignoreCache: true});
+    }		
+  });
 })
 
 var songListTemplate, compiledSongListTemplate;
