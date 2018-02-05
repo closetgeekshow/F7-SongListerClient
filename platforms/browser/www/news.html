@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="dist/css/framework7.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+  <link rel="stylesheet" href="css/mainmenu.css">
+</head>
+<body>
+  <div id="app" class="color-theme-pink">
+    <div class="statusbar"></div>
+    <div class="view view-main view-init ios-edges">
+      <div class="page mainmenu" data-name="profile">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="f7-icons">home</i>
+                </a>
+            </div>
+            <div class="title sliding">News</div>
+            <div class="right">
+                <a href="#" class="link icon-only panel-open" data-panel="left">
+                    <i class="f7-icons">mic</i>
+                </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="page-content"> 
+            <div class="block-title">
+                A message from Jeff
+            </div>
+            <div class="block">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim orci vitae imperdiet posuere. Etiam tincidunt urna eu elit lacinia cursus. Sed vel orci non arcu dictum fermentum. Cras iaculis tellus libero. In gravida lacus sit amet urna bibendum, at sodales nibh sollicitudin. Donec euismod maximus egestas. Vestibulum venenatis non sem vitae aliquet. Nam vitae consectetur enim, quis rhoncus libero. Nam semper convallis felis, a cursus purus malesuada ac. Proin ligula tellus, pellentesque in scelerisque bibendum, pharetra ac justo. Nunc rutrum venenatis massa, vel molestie arcu varius vel. Aliquam erat volutpat. Nullam sollicitudin neque odio, quis pretium neque ornare ut.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="dist/js/framework7.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

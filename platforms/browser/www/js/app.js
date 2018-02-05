@@ -50,7 +50,7 @@ $(document).on('page:init', '.page[data-name="add"]', function (e) {
         if ($('input[name="artistName"]').val() && $('input[name="songTitle"]').val() ) {
           var formData = app.form.convertToData('#add-song-form');
           
-          if (songList.songs[0].artistName = "Add a song") {
+          if (songList.songs[0].songTitle == "Add a song") {
             //songList.songs.push(formData);
             songList.songs = new Array(formData);
             

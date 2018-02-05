@@ -17,65 +17,16 @@
 <body>
   <div id="app" class="color-theme-pink">
     <div class="statusbar"></div>
-    <div class="panel panel-left panel-reveal">
-        <div class="page" data-name="calendar">
-            <div class="page-content">
-                <div class="card">
-                    <div class="card-header">Singer Name</div>
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                            Artist Name - Song Title
-                        </div>
-                    </div>
-                    <div class="card-footer"><b>1</b> Now on stage</div>
-                </div>
-                <div class="card">
-                        <div class="card-header">Singer Name</div>
-                        <div class="card-content">
-                            <div class="card-content-inner">
-                                Artist Name - Song Title
-                            </div>
-                        </div>
-                        <div class="card-footer"><b>2</b> Approximately 4 minutes</div>
-                </div>
-                <div class="card">
-                        <div class="card-header">Singer Name</div>
-                        <div class="card-content">
-                            <div class="card-content-inner">
-                                Artist Name - Song Title
-                            </div>
-                        </div>
-                        <div class="card-footer"><b>3</b> Approximately 8 minutes</div>
-                </div>
-                <div class="card">
-                        <div class="card-header">Singer Name</div>
-                        <div class="card-content">
-                            <div class="card-content-inner">
-                                Artist Name - Song Title
-                            </div>
-                        </div>
-                        <div class="card-footer"><b>4</b> Approximately 12 minutes</div>
-                </div>
-                <div class="card">
-                        <div class="card-header">Singer Name</div>
-                        <div class="card-content">
-                            <div class="card-content-inner">
-                                Artist Name - Song Title
-                            </div>
-                        </div>
-                        <div class="card-footer"><b>5</b> Approximately 16 minutes</div>
-                    </div>
-                </div>
-            </div>
-        </div>
     <div class="view view-main view-init ios-edges" data-url="/main/">
       <div class="page mainmenu" data-name="mainmenu">
         <div class="navbar">
           <div class="navbar-inner">
             <div class="left">
-                
+                <a href="#" class="link back">
+                    <i class="f7-icons">home</i>
+                </a>
             </div>
-            <div class="title sliding">Main Menu</div>
+            <div class="title sliding">Profile</div>
             <div class="right">
                 <a href="#" class="link icon-only panel-open" data-panel="left">
                     <i class="f7-icons">mic</i>
@@ -86,44 +37,33 @@
         </div>
         <div class="page-content"> 
             <div class="block">
-                    <div class="row">
-                            <div class="col-50 center"><a href="my-songs.html">
-                                <i class="f7-icons size-50">tune_fill</i>
-                                <p></p>
-                                My Songs</a>
-                            </div>
-                            <div class="col-50 center"><a href="up-next.html">
-                                <i class="f7-icons size-50">mic_fill</i><br />
-                                <p></p>
-                                Up Next</a>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-100"><p></p></div>
-                          </div>
-                          <div class="row">
-                                <div class="col-50 center"><a href="calendar.html">
-                                        <i class="f7-icons size-50">calendar_fill</i><br />
-                                        <p></p>
-                                        Calendar</a></div>
-                                <div class="col-50 center"><a href="news.html">
-                                        <i class="f7-icons size-50">list</i><br />
-                                        <p></p>
-                                        News</a>
+                <form class="list no-hairlines" id="profile-form">
+                    <ul>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">Singer Name</div>
+                                <div class="item-input-wrap">
+                                <input type="text" name="singerName" placeholder="Your name">
+                                <span class="input-clear-button"></span>
                                 </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-100"><p></p></div>
-                          </div>
-                          <div class="row">
-                                <div class="col-50 center"><a href="profile.html">
-                                        <i class="f7-icons size-50">person</i><br />
-                                        <p></p>
-                                        Profile</a>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">Your email</div>
+                                <div class="item-input-wrap">
+                                <input type="email" name="email" placeholder="Your email">
+                                <span class="input-clear-button"></span>
                                 </div>
-                                
-                          </div>
-            </div>
+                            </div>
+                        </li>
+                    </ul>                        
+                </form>
+                <div class="block">
+                    <p><a href="#" class="button button-fill">Save Changes</a></p>
+                    <p><a href="#" class="button button-outline">Change Password</a></p>
+                </div>  
+          </div>
         </div>
       </div>
     </div>

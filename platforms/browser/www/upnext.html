@@ -17,9 +17,26 @@
 <body>
   <div id="app" class="color-theme-pink">
     <div class="statusbar"></div>
-    <div class="panel panel-left panel-reveal">
-      <div class="page" data-name="calendar">
-        <div class="page-content">
+    
+        
+        
+    <div class="view view-main view-init ios-edges" data-url="/main/">
+      <div class="page mainmenu" data-name="upnext">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="f7-icons">home</i>
+                </a>
+            </div>
+            <div class="title sliding">Up Next</div>
+            <div class="right">
+                
+            </div>
+            
+          </div>
+        </div>
+        <div class="page-content"> 
             <div class="card">
                 <div class="card-header">Singer Name</div>
                 <div class="card-content">
@@ -68,64 +85,8 @@
         </div>
       </div>
     </div>
-    <div class="view view-main view-init ios-edges" data-url="/">
-      <div class="page">
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="left">
-              
-            </div>
-            <div class="title sliding">Songsmith Karaoke</div>
-            <div class="right">
-              
-            </div>
-            <!--form data-search-container=".components-list" data-search-in="a" class="searchbar searchbar-expandable searchbar-components searchbar-init">
-              <div class="searchbar-inner">
-                <div class="searchbar-input-wrap">
-                  <input type="search" placeholder="Search components"/>
-                  <i class="searchbar-icon"></i>
-                  <span class="input-clear-button"></span>
-                </div>
-                <span class="searchbar-disable-button">Cancel</span>
-              </div>
-            </form-->
-          </div>
-        </div>
-        <div class="page-content"> 
-          <div class="block">
-            <p><a class="button button-fill link" href="/login/">Start</a></p>
-            <p><a class="button button-outline link external" href="./index.html?theme=ios">Set to iPhone style</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
-  <script id="song-list-template" type="text/template7">{{#each songs}}
-    <li>
-        <div class="item-content">
-            <div class="item-media">
-                <div class="checkbox-cell">
-                        <label class="checkbox">
-                        <input type="checkbox"/>
-                        <i class="icon-checkbox"></i>
-                    </label>
-                </div>
-            </div>
-            <div class="item-inner">
-                <a href="#" class="item-link">
-                    <div class="item-title-row">
-                        <div class="item-title">{{songTitle}}</div>
-                    </div>
-                    <div class="item-subtitle">{{artistName}}</div>
-                </a>
-            </div>
-        </div>
-    </li>
-    {{/each}}</script>
-  <script src="dist/js/framework7.js"></script>
-
-  <script src="js/songList.js"></script>
-
+  <script src="dist/js/framework7.min.js"></script>
   <script src="js/routes.js"></script>
   <script src="js/app.js"></script>
 </body>
