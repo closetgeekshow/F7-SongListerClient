@@ -36,14 +36,14 @@ var app = new Framework7({
 // Option 2. Using live 'page:init' event handlers for each page
 $(document).on('page:init', '.page[data-name="login"]', function (e) {
   // Do something here when page with data-name="about" attribute loaded and initialized
-  console.log('login page loaded');
+  /*console.log('login page loaded');
   $('#login-form').on('form:storedata', function (e) {
       console.log('data stored');
       var formData = app.form.convertToData('#login-form');
       console.log('data: ' + JSON.stringify(formData));
 
       
-  }); 
+  }); */
 })
 
 $(document).on('page:init', '.page[data-name="add"]', function (e) {
