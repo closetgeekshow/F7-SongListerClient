@@ -16,8 +16,8 @@
 <body>
   <div id="app" class="color-theme-pink">
     <div class="statusbar"></div>
-    <div class="view view-main view-init ios-edges" data-url="/add/">
-      <div class="page" data-name="add">
+    <div class="view view-main view-init ios-edges" data-url="/add-more/">
+      <div class="page" data-name="add-more">
         <div class="navbar">
           <div class="navbar-inner">
             <div class="left">
@@ -36,7 +36,7 @@
           </div>
         </div>
         <div class="page-content"> 
-            <form class="list no-hairlines no-hairlines-between" id="add-song-form">
+            <form class="list no-hairlines no-hairlines-between" id="add-song-more-form">
                 <ul>
                     <li>
                         <div class="item-content">
@@ -61,10 +61,42 @@
                                 </div>
                         </div>
                     </li>
+                    <li>
+                        <a class="item-link smart-select smart-select-init">
+                            <select name="version">
+                              <option value="any" selected>Any</option>
+                              <option value="version 1">Version 1</option>
+                              <option value="version 2">Version 2</option>
+                              <option value="version 3">Version 3</option>
+                              <option value="version 4">Version 4</option>
+                            </select>
+                            <div class="item-content">
+                              <div class="item-inner">
+                                <div class="item-title">Version</div>
+                              </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                    <a class="item-link smart-select smart-select-init">
+                            <select name="key">
+                                <option value="down2">Down 2 Octaves</option>
+                                <option value="down1">Down 1 Octave</option>
+                                <option value="normal" selected>Normal</option>
+                                <option value="up1">Up 1 Octave</option>
+                                <option value="up2">Up 2 Octaves</option>
+                            </select>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                <div class="item-title">Key Change</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                 </ul>                        
             </form>
         <div class="block">
-                <p><a href="/add-more/" class="button button-outline">More Details</a></p>
+                <p><a href="/add/" class="button button-outline">Less Details</a></p>
                 <p><a href="" class="button button-fill convert-form-to-data">Submit</a></p>
         </div>
         </div>

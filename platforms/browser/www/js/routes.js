@@ -26,7 +26,7 @@ var routes = [
   // more details page
   {
     path: '/add-more/',
-    url: './more-details.html',
+    url: './add-song-more.html',
     name: 'add-more',
   },
   // calendar page
