@@ -60,10 +60,13 @@ login.loginUser = function (data) {
         },
         success: function (result) {
            //asengine.removeLoadingButton(btn);
-           if( result.status === 'success' )
+           if( result.status === 'success' ) {
                //window.location = result.page;
                console.log("login success");
-               //router.navigate("/starting-news/");
+               //jq(document).trigger("successfullogin");
+               //app.emit("successfullogin");
+               app.router.navigate("/starting-news/");
+           }
            else {
                console.log("login failed");
                //asengine.displayErrorMessage(jq("#login-username"));
