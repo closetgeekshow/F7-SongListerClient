@@ -8,5 +8,5 @@
         Brent Morris
     </author>
     <content src="index.html" />
-    <access origin="*" />
+    <access origin="http://songlister.nfshost.com" />
 </widget>
