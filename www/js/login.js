@@ -56,7 +56,8 @@ login.loginUser = function (data) {
             action  : "checkLogin",
             username: data.username,
             password: data.password,
-            id      : data.id
+            id      : data.id,
+            loginsource : 'cordova' // Skip CRSF check from phonegap logins. 
         },
         success: function (result) {
            //asengine.removeLoadingButton(btn);
@@ -69,6 +70,7 @@ login.loginUser = function (data) {
            }
            else {
                console.log("login failed");
+               app.dialog.alert("login failed", "login failed");
                //asengine.displayErrorMessage(jq("#login-username"));
                //asengine.displayErrorMessage(jq("#login-password"), result.message);
            }

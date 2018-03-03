@@ -46,6 +46,26 @@ $(document).on('page:init', '.page[data-name="login"]', function (e) {
   }); */
 })
 
+$(document).on('page:init', '.page[data-name="news"]', function (e) {
+  app.request.get('http://songlister.nfshost.com/as/news-block.php', function (data) {
+    $('#news-content').html(data);
+    console.log('Load was performed');
+  });  
+})
+
+$(document).on('page:init', '.page[data-name="login"]', function (e) {
+  app.request.get('http://songlister.nfshost.com/as/news-block.php', function (data) {
+    $('#ASDF').html(data);
+    console.log('Load was performed');
+  });  
+})
+
+$(document).on('page:init', '.page[data-name="login"]', function (e) {
+  $('#btn-logout').on('click', function(){
+    app.request.get('http://songlister.nfshost.com/as/simple-logout.php', function (data) {});
+  });  
+})
+
 $(document).on('page:init', '.page[data-name="add"]', function (e) {
   // Do something here when page with data-name="about" attribute loaded and initialized
   console.log('add page loaded');
@@ -103,6 +123,8 @@ $(document).on('page:init', '.page[data-name="add-more"]', function (e) {
     }		
   });
 })
+
+
 
 var songListTemplate, compiledSongListTemplate;
 
