@@ -66,6 +66,11 @@ $(document).on('page:init', '.page[data-name="login"]', function (e) {
   });  
 })
 
+$(document).on('page:init', '.page[data-name="index"]', function (e) {
+  app.request.get('http://songlister.nfshost.com/as/simple-logout.php', function (data) {});
+    
+})
+
 $(document).on('page:init', '.page[data-name="add"]', function (e) {
   // Do something here when page with data-name="about" attribute loaded and initialized
   console.log('add page loaded');

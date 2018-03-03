@@ -6,8 +6,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="theme-color" content="#2196f3">
-  <!--meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:"-->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://songlister.nfshost.com">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' http://songlister.nfshost.com"-->
   
   <title>Framework7</title>
   <link rel="stylesheet" href="dist/css/framework7.min.css">
@@ -21,7 +21,7 @@
   <div id="app" class="color-theme-pink">
     <div class="statusbar"></div>
     <div class="panel panel-left panel-reveal">
-      <div class="page" data-name="calendar">
+      <div class="page" data-name="index">
         <div class="page-content">
             <div class="card">
                 <div class="card-header">Singer Name</div>
@@ -99,7 +99,10 @@
             <p><a class="button button-fill link" href="/login/">Start</a></p>
             <p><a class="button button-outline link external" href="./index.html?theme=ios">Set to iPhone style</a></p>
             <p><a class="button button-outline link external" href="./index.html?theme=md">Set to Android style</a></p>
-        </div>
+          </div>
+          <div class="block" id="test">
+
+          </div>
         </div>
       </div>
     </div>
