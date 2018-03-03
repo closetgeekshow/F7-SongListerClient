@@ -67,8 +67,9 @@ $(document).on('page:init', '.page[data-name="login"]', function (e) {
 })
 
 $(document).on('page:init', '.page[data-name="index"]', function (e) {
-  app.request.get('http://songlister.nfshost.com/as/simple-logout.php', function (data) {});
-    
+  app.request.get('http://songlister.nfshost.com/phpinfo.php', function (data) {
+    $('#testarea').html(data);
+  });    
 })
 
 $(document).on('page:init', '.page[data-name="add"]', function (e) {
