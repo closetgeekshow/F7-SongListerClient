@@ -9,4 +9,6 @@
     </author>
     <content src="index.html" />
     <access origin="http://songlister.nfshost.com" />
+    <allow-navigation href="*://songlister.nfshost.com/*" />
+    <allow-intent href="http://songlister.nfshost.com/*" />
 </widget>

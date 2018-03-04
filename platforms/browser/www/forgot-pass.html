@@ -17,14 +17,16 @@
   <div id="app" class="color-theme-pink">
     <div class="statusbar"></div>
     
-    <div class="view view-main view-init ios-edges" data-url="/login/">
-      <div class="page" data-name="login">
+    <div class="view view-main view-init ios-edges">
+      <div class="page" data-name="forgot-pass">
         <div class="navbar">
           <div class="navbar-inner">
             <div class="left">
-              
+              <a href="#" class="link back">
+                <i class="f7-icons">arrow_left</i>
+              </a>
             </div>
-            <div class="title sliding">Sign in</div>
+            <div class="title sliding">Forgotten password</div>
             <div class="right">
               
             </div>
@@ -32,42 +34,26 @@
         </div>
         <div class="page-content">
           <div class="block">
-                <form class="list no-hairlines" id="login-form">
+                <form class="list no-hairlines" id="forgot-pass-form">
                     <ul>
                         <li class="item-content item-input">
                             <div class="item-inner">
-                                <div class="item-title item-label">Username</div>
+                                <div class="item-title item-label">Email</div>
                                 <div class="item-input-wrap">
-                                <input type="text" name="text" placeholder="Your username" id="login-username">
-                                <span class="input-clear-button"></span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item-content item-input">
-                            <div class="item-inner">
-                                <div class="item-title item-label">Password</div>
-                                <div class="item-input-wrap">
-                                <input type="password" name="password" placeholder="Your password" id="login-password">
+                                <input type="email" name="forgot-password-email" placeholder="Your email" id="forgot-password-email">
                                 <span class="input-clear-button"></span>
                                 </div>
                             </div>
                         </li>
                     </ul>                        
                 </form>
-                
+          </div>
+          <div class="block" id="error-messages">
+            
           </div>
           <div class="block">
-            <p><a href="#" class="button button-fill" id="btn-login">Sign In</a></p>
-            <p><a href="/register/" class="button button-outline">Register</a></p>
-            <p><a href="/forgot-pass/" class="button button-outline">Forgot My Password</a></p>
-            <p><a href="#" class="button button-outline" id="btn-logout">Logout</a></p>
-            
-        </div> 
-        <div class="block">
-          <div id="ASDF">
-            
-          </div>
-        </div> 
+            <p><a href="#" class="button button-fill" id="btn-forgot-password">Reset my password</a></p>            
+          </div> 
         </div>
       </div>
     </div>

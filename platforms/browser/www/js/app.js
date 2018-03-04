@@ -54,10 +54,10 @@ $(document).on('page:init', '.page[data-name="news"]', function (e) {
 })
 
 $(document).on('page:init', '.page[data-name="login"]', function (e) {
-  app.request.get('http://songlister.nfshost.com/as/news-block.php', function (data) {
+  /*app.request.get('http://songlister.nfshost.com/as/news-block.php', function (data) {
     $('#ASDF').html(data);
-    console.log('Load was performed');
-  });  
+    //console.log('Load was performed');
+  });*/  
 })
 
 $(document).on('page:init', '.page[data-name="login"]', function (e) {
@@ -67,9 +67,10 @@ $(document).on('page:init', '.page[data-name="login"]', function (e) {
 })
 
 $(document).on('page:init', '.page[data-name="index"]', function (e) {
-  app.request.get('http://songlister.nfshost.com/phpinfo.php', function (data) {
-    $('#testarea').html(data);
-  });    
+  // I DON'T KNOW WHY THIS NEVER ACTUALLY FIRES 
+  //app.request.get('http://songlister.nfshost.com/phpinfo.php', function (data) {
+  //  $('#testarea').html(data);
+  //});    
 })
 
 $(document).on('page:init', '.page[data-name="add"]', function (e) {

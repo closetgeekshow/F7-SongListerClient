@@ -70,7 +70,7 @@ login.loginUser = function (data) {
            }
            else {
                console.log("login failed");
-               app.dialog.alert("login failed", "login failed");
+               //app.dialog.alert("login failed", "login failed");
                //asengine.displayErrorMessage(jq("#login-username"));
                //asengine.displayErrorMessage(jq("#login-password"), result.message);
            }
@@ -86,11 +86,11 @@ login.validateLogin = function (un, pass) {
     asengine.removeErrorMessages();
 
     if(jq.trim(un.val()) == "") {
-        asengine.displayErrorMessage(un);
+        //asengine.displayErrorMessage(un);
         valid = false;
     }
     if(jq.trim(pass.val()) == "") {
-        asengine.displayErrorMessage(pass);
+       // asengine.displayErrorMessage(pass);
         valid = false;
     }
 

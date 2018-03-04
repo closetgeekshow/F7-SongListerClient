@@ -17,6 +17,18 @@ var routes = [
     url: './login.html',
     name: 'login',
   },
+  // register page
+  {
+    path: '/register/',
+    url: './register.html',
+    name: 'register',
+  },
+  // forgot password page
+  {
+    path: '/forgot-pass/',
+    url: './forgot-pass.html',
+    name: 'forgot-pass',
+  },
   // add song page
   {
     path: '/add/',
