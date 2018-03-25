@@ -76,6 +76,7 @@ register.registerUser = function (data) {
                     var error = res.errors[i];
                     asengine.displayErrorMessage($("#"+error.id), error.msg);
                 }*/
+                $("#error-messages").html("Error Registering");
             }
             else {
                 // redirect to login

@@ -49,7 +49,14 @@ $(document).on('page:init', '.page[data-name="login"]', function (e) {
 $(document).on('page:init', '.page[data-name="news"]', function (e) {
   app.request.get('http://songlister.nfshost.com/as/news-block.php', function (data) {
     $('#news-content').html(data);
-    console.log('Load was performed');
+    console.log('Load news-content was performed');
+  });  
+})
+
+$(document).on('page:init', '.page[data-name="profile"]', function (e) {
+  app.request.get('http://songlister.nfshost.com/as/profile-block.php', function (data) {
+    $('#profile-form ul').html(data);
+    console.log('Load profile-form was performed');
   });  
 })
 
